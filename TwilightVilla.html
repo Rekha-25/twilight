@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwilightVilla</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.redd.it/dr5cbbya3md01.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Twilight Villa</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Book Your Sweetest Destination</h2>
+            <p>Happiness looks good on you, especially in our hotel. ...</p>
+        </div>
+        <div class="gallery">
+            <img src="https://c4.wallpaperflare.com/wallpaper/216/530/543/evening-dusk-view-out-of-water-bungalow-maldives-wallpaper-preview.jpg" alt="Sweet 1">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/2e/05/30/ayada-maldives.jpg?w=700&h=-1&s=1" alt="Sweet 2">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/347680403.jpg?k=03a433a9d0a00bfaaaf00519f0200a02cc9f833778d885f8cdc0398f0382979f&o=&hp=1" alt="Sweet 3">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our hotel, where comfort meets elegance. Our thoughtfully designed rooms offer a serene escape, featuring modern amenities and stunning views. Whether you’re here for business or leisure, our dedicated staff is committed to ensuring a memorable stay. Experience unparalleled hospitality and make lasting memories with us.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Twilight Villa. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
